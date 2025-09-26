@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NA PRZÓD ! - dołącz !</title>
+    <style>
+        body {
+            background-color: #43c577;
+            background-image: url(bg.png);
+            background-attachment: fixed;
+            background-size: cover;            
+        }
+        #baner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            padding-top: 2%;
+        }
+        @media (max-width: 768px) {
+            #baner {
+                width: 100%;
+                margin: 1%;
+                padding-top: 40%;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Hide the banner initially
+            $('#baner').hide();
+
+            // Fade in over 4 seconds (4000 milliseconds)
+            $('#baner').fadeIn(5000);
+        });
+    </script>
+</head>
+<body>
+    <object id="baner" data="landing-naprzod.svg" type="image/svg+xml"></object>
+</body>
+
+</html>
